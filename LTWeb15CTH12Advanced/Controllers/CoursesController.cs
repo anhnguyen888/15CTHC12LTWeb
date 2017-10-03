@@ -14,9 +14,11 @@ namespace LTWeb15CTH12Advanced.Controllers
             dbContext = new ApplicationDbContext();
         }
         [Authorize(Roles = "GiangVien")]
-
+        // Create Course
         // anh nguyen 999 Create Course
         // anh nguyen 999 conflict
+        // Create anh nguyen 888 Course
+        // Add new anh nguyen 888
         public ActionResult Create()
         {
             var viewModel = new CourseViewModel()
