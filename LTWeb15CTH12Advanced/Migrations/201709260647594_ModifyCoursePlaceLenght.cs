@@ -1,0 +1,18 @@
+namespace LTWeb15CTH12Advanced.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class ModifyCoursePlaceLenght : DbMigration
+    {
+        public override void Up()
+        {
+            AlterColumn("dbo.Courses", "Place", c => c.String(nullable: false, maxLength: 500));
+        }
+        
+        public override void Down()
+        {
+            AlterColumn("dbo.Courses", "Place", c => c.String(nullable: false, maxLength: 250));
+        }
+    }
+}

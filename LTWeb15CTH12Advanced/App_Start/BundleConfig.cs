@@ -1,6 +1,7 @@
-﻿using System.Web.Optimization;
+﻿using System.Web;
+using System.Web.Optimization;
 
-namespace _15CTHC12LTWeb
+namespace LTWeb15CTH12Advanced
 {
     public class BundleConfig
     {
@@ -25,8 +26,6 @@ namespace _15CTHC12LTWeb
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
-
-            BundleTable.EnableOptimizations = false;
         }
     }
 }
