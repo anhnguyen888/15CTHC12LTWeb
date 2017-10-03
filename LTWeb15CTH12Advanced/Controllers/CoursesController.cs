@@ -14,7 +14,7 @@ namespace LTWeb15CTH12Advanced.Controllers
             dbContext = new ApplicationDbContext();
         }
         [Authorize(Roles = "GiangVien")]
-        // GET: Courses
+        // Create Course
         public ActionResult Create()
         {
             var viewModel = new CourseViewModel()
